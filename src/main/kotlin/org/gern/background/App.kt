@@ -10,7 +10,7 @@ fun main() = runBlocking {
     val scheduler = WorkScheduler(
             finder = finder,
             workers = workers,
-            interval = 1_000
+            intervalMillis = 5_000
     )
 
     scheduler.start()
